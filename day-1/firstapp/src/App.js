@@ -1,25 +1,34 @@
 import Card from './Cards';
-
 import React from 'react'
+import Sdata from './Sdata';
+
 
 const App = () => {
     return (
         <div>
-            hello world
-            <Card imgsrc="https://res.klook.com/image/upload/q_85/c_fill,w_750/v1640140560/blog/vsss72njiq5g0o41m7dh.jpg"
-                title="A Netflix Original Series"
-                Sname="Money Heist "
-                rating="5"
+            <h1 className='heading_style'>List of Top 5 Netflix series</h1>
+            <Card Sname={Sdata[0].Sname}
+                imgsrc={Sdata[0].imgsrc}
+                title={Sdata[0].title}
+
+
             />
-            <Card imgsrc="https://upload.wikimedia.org/wikipedia/en/a/a1/CAT_20022-Non-free-rational.jpg"
-                title="A Netflix Original Series"
-                Sname="CAT" />
-            <Card imgsrc="https://assets.teenvogue.com/photos/6436c21b4ea1fdd79f2d6c94/1:1/w_1259,h_1259,c_limit/StrangerThings_S3_Illustrated_Vertical_FINAL_RGB_Digital__EN.jpg"
-                title="A Netflix Original Series"
-                Sname="Stranger Things " />
-            <Card imgsrc="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2018/07/06/Pictures/_aff9a9dc-812d-11e8-9920-75f90a7836bc.JPG"
-                title="A Netflix Original Series"
-                Sname="Sacred Games" />
+            <Card Sname={Sdata[1].Sname}
+                imgsrc={Sdata[1].imgsrc}
+                title={Sdata[1].title}
+
+            />
+            <Card
+                Sname={Sdata[2].Sname}
+                imgsrc={Sdata[2].imgsrc}
+                title={Sdata[2].title}
+
+            />
+            <Card Sname={Sdata[3].Sname}
+                imgsrc={Sdata[3].imgsrc}
+                title={Sdata[3].title}
+
+            />
         </div>
 
     )
